@@ -11,13 +11,13 @@ function calculateBMI() {
   let bmi = weight/(height/100) ** 2;
 
   if (bmi < 18.5) {
-    alert("You are underweight!")
-  } else if (bmi >= 18.5 && bmi <= 24.9){
-    alert("Your weight is healthy!")
-  } else if (bmi >= 20.0 && bmi <= 29.9){
-    alert("You are overweight!")
-  } else {
-    alert("You are obese!")
+    alert(`Your BMI is ${bmi} \n You have are underweight..`)
+  } else if (bmi >= 18.5 && bmi <= 24.99) {
+    alert(`Your BMI is ${bmi} \n You have a healthy BMI.`)
+  } else if (bmi >= 25 && bmi <= 29.99) {
+    alert(`Your BMI is ${bmi} \n You have are overweight.`)
+  } else if (bmi >= 30) {
+    alert(`Your BMI is ${bmi} \n You have are obese.`)
   }
 
   if ((age >= 19 && age <= 24) && (BMI >=19 && BMI <= 24)) {
